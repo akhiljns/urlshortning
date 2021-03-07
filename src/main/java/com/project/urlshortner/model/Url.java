@@ -24,4 +24,13 @@ public class Url {
 		final String id = Hashing.sha512().hashString(url, StandardCharsets.UTF_8).toString();
 		return new Url(id, url, LocalDateTime.now());
 	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("shortned Url = https://shorturl/");
+		builder.append(id);
+		return builder.toString();
+	}
+
 }

@@ -1,5 +1,4 @@
-com\springboot\redis\tinyurl\model\UrlDto.class
-com\springboot\redis\tinyurl\exception\TinyUrlError.class
-com\springboot\redis\tinyurl\config\RedisConfig.class
-com\springboot\redis\tinyurl\controller\TinyUrlController.class
-com\springboot\redis\tinyurl\Runner.class
+com\project\urlshortner\config\RedisConfig.class
+com\project\urlshortner\controller\UrlShortningController.class
+com\project\urlshortner\ApplicationServer.class
+com\project\urlshortner\model\Url.class

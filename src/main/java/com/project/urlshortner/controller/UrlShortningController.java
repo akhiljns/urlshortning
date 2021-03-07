@@ -39,9 +39,9 @@ public class UrlShortningController {
 //        }
 
 		final Url urlOb = Url.createUsingMurmur(url);
-		log.info("URL id generated = {}", urlOb.getId());
+		log.info("URL generated = ", urlOb.getId());
 		redisTemplate.opsForValue().set(urlOb.getId(), urlOb, ttl, TimeUnit.SECONDS);
-		return ResponseEntity.noContent().header("id", urlOb.getId()).build();
+		return ResponseEntity.ok(urlOb.toString());
 	}
 
 	@SuppressWarnings("rawtypes")
