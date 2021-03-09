@@ -2,7 +2,7 @@ version: '3'
 services:
   app:
     container_name: docker-urlshortner
-    image: urlshortner:v1
+    image: akhiljns/urlshortner:v1
     build: .
     links:
       - redis
@@ -12,7 +12,7 @@ services:
       - ~/docker/redis:/urlshortner/logs
   redis:
     container_name: docker-redis
-    image: redis:v1
+    image: akhiljns/redis:v1
     build: ./redis
     hostname: redis
     ports:

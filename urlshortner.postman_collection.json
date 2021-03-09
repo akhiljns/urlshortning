@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "f2394963-b1d9-4557-aff3-c4e6bc793373",
+		"name": "urlshortner",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:10095/rest/url",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"url\" : \"https://www.facebook.com/\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:10095/rest/url",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "10095",
+					"path": [
+						"rest",
+						"url"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:10095/rest/url/0e2d9959",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"url\" : \"https://www.facebook.com/\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:10095/rest/url/0e2d9959",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "10095",
+					"path": [
+						"rest",
+						"url",
+						"0e2d9959"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
