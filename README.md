@@ -48,11 +48,12 @@ json body :
 	"url" : "https://www.facebook.com/"
 }
 
+<br />
 response { shortned Url = https://shorturl/0e2d9959 }
 
 where id is 0e2d9959 i.e. https://shorturl/{id}
 
-
+<br /><br />
 
 GET request to fetch original url from id generated
 
